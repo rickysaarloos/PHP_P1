@@ -8,38 +8,40 @@
 </head>
 <body>
     <h1>Registratieformulier</h1>
-    <form action="/submit" method="post">
-        <!-- Gebruikersnaam -->
+    <form action="form_process.php" method="post">
         <label for="username">Gebruikersnaam:</label>
         <input type="text" id="username" name="username" minlength="3" maxlength="15" required>
-<br><br>
-        <!-- E-mailadres -->
+        <br><br>
+
         <label for="email">E-mailadres:</label>
         <input type="email" id="email" name="email" required>
-<br><br>
-        <!-- Wachtwoord -->
+        <br><br>
+
         <label for="password">Wachtwoord:</label>
         <input type="password" id="password" name="password" minlength="6" required>
-<br><br>
-        <!-- Geslacht -->
+        <br><br>
+
         <label>Geslacht:</label>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Man</label>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Vrouw</label>
-<br><br>
-        <!-- Land -->
+        <input type="radio" id="man" name="gender" value="man" required>
+        <label for="man">Man</label>
+        <input type="radio" id="vrouw" name="gender" value="vrouw">
+        <label for="vrouw">Vrouw</label>
+        <br><br>
+
         <label for="country">Land:</label>
         <select id="country" name="country" required>
-            <option value="">-- Kies een land --</option>
-            <option value="nederland">Nederland</option>
-            <option value="belgie">België</option>
-            <option value="duitsland">Duitsland</option>
-            <option value="frankrijk">Frankrijk</option>
+            <option value="">Selecteer uw land</option>
+            <option value="Nederland">Nederland</option>
+            <option value="België">België</option>
+            <option value="Duitsland">Duitsland</option>
+            <option value="Frankrijk">Frankrijk</option>
         </select>
-<br><br>
-        <!-- Verzenden -->
+        <br><br>
+
         <button type="submit">Registreren</button>
     </form>
+
+
+
 </body>
 </html>
